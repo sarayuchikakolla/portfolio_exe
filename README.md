@@ -4,7 +4,7 @@ A modern, responsive, and professional portfolio website designed to showcase my
 
 ## 🔗 Live Demo
 
-[Add your deployed website link here.](https://sarayuchikakolla.github.io/portfolio_exe/)
+https://sarayuchikakolla.github.io/portfolio_exe/
 
 ## 📖 About the Project
 
