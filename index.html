@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sarayu Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg,
+                    #0f172a,
+                    #1e293b,
+                    #2563eb);
+            color: white;
+        }
+
+        .profile-img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgb(208, 202, 202);
+            box-shadow: 0 0 30px rgba(255, 255, 255, .3);
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: .4s;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, .3);
+        }
+
+        #achievements .card {
+            border: none;
+            border-radius: 20px;
+            transition: 0.4s;
+            background: white;
+        }
+
+        #achievements .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.25);
+        }
+
+        footer {
+            background: #212529;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                Sarayu Portfolio
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <h5 class="text-info">Hello, I'm</h5>
+
+                    <h1 class="display-2 fw-bold">
+                        CHIKAKOLLA SARAYU
+                    </h1>
+
+                    <h3 class="text-warning mb-3">
+                        Intrested in Full Stack Developer
+                    </h3>
+
+                    <p class="lead">
+                        Passionate Computer Science student
+                        building scalable web applications
+                        and AI-powered solutions.
+                    </p>
+
+                    <button class="btn btn-outline-warning btn-lg me-3" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                        Resume
+                    </button>
+
+                    <a href="#projects" class="btn btn-outline-light btn-lg">
+                        Projects
+                    </a>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="images/profile.jpeg" class="profile-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container py-5">
+
+        <h2 class="text-center mb-4">
+            About Me
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <h4>Education</h4>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        B.Tech CSE - CVR College of Engineering
+                        (CGPA 8.67)
+                    </li>
+
+                    <li class="list-group-item">
+                        Intermediate - Resonance College
+                        (91.8%)
+                    </li>
+
+                    <li class="list-group-item">
+                        SSC - SPR School of Excellence
+                        (100%)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Career Objective</h4>
+
+                <p>
+                    To obtain a challenging software development
+                    position where I can apply my technical and
+                    problem-solving skills while contributing to
+                    innovative projects.
+                </p>
+
+                <h4>Interests</h4>
+
+                <ul>
+                    <li>Gaming</li>
+                    <li>Music</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-light py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">
+                Skills
+            </h2>
+
+            <h5>Java</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar" style="width:75%">
+                    75%
+                </div>
+            </div>
+
+            <h5>Python</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width:75%">
+                    75%
+                </div>
+            </div>
+
+            <h5>HTML/CSS</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-warning" style="width:95%">
+                    95%
+                </div>
+            </div>
+
+            <h5>Bootstrap</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-info" style="width:90%">
+                    90%
+                </div>
+            </div>
+
+            <h5>JavaScript</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-danger" style="width:80%">
+                    80%
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container py-5">
+
+        <h2 class="text-center mb-4">
+            Projects
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card h-100">
+
+                    <div class="card-body">
+
+                        <h4>PrepMate</h4>
+
+                        <p>
+                            AI Mock Interview Platform using
+                            Gemini AI.
+                        </p>
+
+                        <p>
+                            React,Supabase
+                        </p>
+
+                        <a href="https://github.com/sarayuchikakolla/prep_mate" class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100">
+
+                    <div class="card-body">
+
+                        <h4>QR Based Seminar Mic</h4>
+
+                        <p>
+                            QR-based microphone platform
+                            for seminars.
+                        </p>
+
+                        <p>
+                            React, Supabase, Tailwind
+                        </p>
+
+                        <a href="https://github.com/sarayuchikakolla/QR_BASED_MICROPHONE" class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100">
+
+                    <div class="card-body">
+
+                        <h4>GROCO</h4>
+
+                        <p>
+                            Smart Grocery and Cooking Assistant.
+                        </p>
+
+                        <p>
+                            React, Firebase, Spoonacular API
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Achievements & Certifications
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <i class="bi bi-award-fill fs-1 text-warning"></i>
+                            <h4 class="mt-3">NPTEL Java</h4>
+                            <p>Successfully completed Programming in Java with 81% score.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            <h4 class="mt-3">LeetCode</h4>
+                            <p>Solved 160+ coding problems across various topics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <i class="bi bi-trophy-fill fs-1 text-success"></i>
+                            <h4 class="mt-3">Hackathons</h4>
+                            <p>Participated in Adobe India Hackathon, SIH and Technoverse.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <i class="bi bi-shield-check fs-1 text-danger"></i>
+                            <h4 class="mt-3">RedHat</h4>
+                            <p>Certified in Application Development using RedHat technologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <i class="bi bi-cloud-fill fs-1 text-info"></i>
+                            <h4 class="mt-3">Juniper</h4>
+                            <p>Completed Juniper Cloud & Automation Academy program.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="card-body">
+                            <i class="bi bi-laptop-fill fs-1 text-secondary"></i>
+                            <h4 class="mt-3">HackerRank</h4>
+                            <p>870+ points earned through coding and problem solving.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container py-5">
+
+        <h2 class="text-center mb-4">Contact Me</h2>
+
+        <form action="mailto:sarayuchikakolla@gmail.com" method="post" enctype="text/plain">
+
+            <input type="text" class="form-control mb-3" name="name" placeholder="Name" required>
+
+            <input type="email" class="form-control mb-3" name="email" placeholder="Email" required>
+
+            <input type="text" class="form-control mb-3" name="subject" placeholder="Subject" required>
+
+            <textarea rows="5" class="form-control mb-3" name="message" placeholder="Message" required></textarea>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
+
+        </form>
+
+        <div class="text-center mt-4">
+            <p>
+                📧 Email: <strong>sarayuchikakolla@gmail.com</strong>
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5>Resume</h5>
+
+                    <button class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    Click below to download resume.
+                </div>
+
+                <div class="modal-footer">
+                    <a href="resume.pdf" class="btn btn-success">
+                        Download
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+
+        <h4>Connect With Me</h4>
+
+        <a href="https://github.com/sarayuchikakolla" class="text-white mx-3 fs-3">
+            <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sarayuchikakolla/" class="text-white mx-3 fs-3">
+            <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="mailto:sarayuchikakolla@gmail.com" class="text-white mx-3 fs-3">
+            <i class="bi bi-envelope-fill"></i>
+        </a>
+
+        <p class="mt-3">
+            © 2026 Chikakolla Sarayu
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
