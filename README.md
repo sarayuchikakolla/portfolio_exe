@@ -1,10 +1,10 @@
-# 🌟 Premium Portfolio Website
+# 🌟 Portfolio Website
 
 A modern, responsive, and professional portfolio website designed to showcase my skills, projects, achievements, and career journey. Built using HTML, CSS, Bootstrap, and JavaScript, this portfolio provides an engaging user experience across desktop, tablet, and mobile devices.
 
 ## 🔗 Live Demo
 
-Add your deployed website link here.
+[Add your deployed website link here.](https://sarayuchikakolla.github.io/portfolio_exe/)
 
 ## 📖 About the Project
 
